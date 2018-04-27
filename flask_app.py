@@ -73,7 +73,7 @@ def get_do():
         d = {
             "status": "error",
             "message": "{field} parameter missing".format(
-                field=err.message),
+                field=err.args[0]),
         }
     else:
         result = do_for_user(
