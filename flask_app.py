@@ -84,3 +84,7 @@ def get_do():
             'data': result,
         }
     return jsonify(d)
+
+
+if __name__ == '__main__':
+    app.run()
